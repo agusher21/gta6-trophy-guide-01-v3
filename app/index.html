@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<noscript><p style="padding:16px;background:#7f1d1d;color:#fff;">This guide needs JavaScript: the checklist, filters and roadmap are built from the trophy data when the page loads. The data itself lives in app/data/trophies.json.</p></noscript>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Ledger</h1>
+    <p class="tagline">Every trophy, its guide, and your road to the platinum — kept in one ledger, offline.</p>
+    <div class="goalbar" aria-label="Progress towards the platinum">
+      <div class="goalbar-label"><span>GOAL &middot; 100% AND THE PLATINUM</span><span id="goal-count">0 / 55</span></div>
+      <div class="goalbar-track"><div class="goalbar-fill" id="goal-fill" style="width:0%"></div></div>
+    </div>
+    <div class="count-row">
+      <span class="count-label">YOUR COUNT</span>
+      <button id="count-down" type="button" aria-label="Lower target">&minus;</button>
+      <strong id="count-target">55</strong>
+      <button id="count-up" type="button" aria-label="Raise target">+</button>
+      <span class="count-note" id="count-note">of 55 trophies targeted</span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <a href="#/" id="tab-checklist" class="tab">Checklist</a>
+  <a href="#roadmap" id="tab-roadmap" class="tab">Roadmap</a>
+  <a href="#missables" id="tab-missables" class="tab">Missables <span class="pill" id="missable-pill">1</span></a>
+</nav>
+
+<section class="toolbar" aria-label="Filters and tools">
+  <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <select id="kind-filter" aria-label="Filter by kind">
+    <option value="all">All kinds</option>
+    <option value="story">Story</option>
+    <option value="missable">Missable</option>
+    <option value="collectibles">Collectibles</option>
+    <option value="activities">Activities</option>
+    <option value="online">Online</option>
+  </select>
+  <select id="grade-filter" aria-label="Filter by grade">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select>
+  <label class="spoiler-toggle"><input type="checkbox" id="spoiler"> Hide story spoilers</label>
+  <button id="export-btn" type="button">Export progress</button>
+  <label class="import-label" for="import-file">Import progress</label>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <button id="reset-btn" type="button">Reset</button>
+</section>
+
+<main class="layout">
+  <aside class="col col-list" aria-label="Trophy checklist">
+    <h2>Trophy checklist</h2>
+    <p class="col-note" id="list-note"></p>
+    <ul id="trophy-list" class="trophy-list"></ul>
+  </aside>
+
+  <section class="col col-detail" aria-label="Trophy detail">
+    <div id="detail"></div>
+    <div id="roadmap-view" class="view" hidden>
+      <h2>Roadmap to the platinum</h2>
+      <p class="col-note">Seven stages, about 200 hours, one playthrough. Story first, then the 100% checklist, then clean-up. Nothing on the checklist is missable.</p>
+      <ol id="roadmap-stages" class="roadmap"></ol>
+      <h3>Next up</h3>
+      <p id="next-up" class="next-up"></p>
+    </div>
+    <div id="missables-view" class="view" hidden>
+      <h2>Missable trophies</h2>
+      <p class="col-note">Only one trophy is flagged as possibly missable by the guides. Everything else — story trophies included — can be earned after the story in free roam.</p>
+      <ul id="missable-list" class="trophy-list"></ul>
+      <h3>Time-sensitive, not missable</h3>
+      <p class="col-note">Some stranger mission chains have windows tied to story progress. Take Andy, Kenton, Randy and Tyrone missions as they appear instead of leaving every strand for after the credits.</p>
+    </div>
+  </section>
+
+  <aside class="col col-side" aria-label="Sources and roadmap">
+    <h2>Sources</h2>
+    <p class="col-note">Every guide above is written in our own words and cites the guide it draws on. We never copy another guide's text.</p>
+    <ul id="source-list" class="source-list"></ul>
+    <h2>Roadmap at a glance</h2>
+    <ol id="roadmap-mini" class="roadmap-mini"></ol>
+    <p class="audit">Audit strip: 55 trophies &middot; 1 platinum, 2 gold, 6 silver, 46 bronze &middot; 28 hidden &middot; 1 possibly missable &middot; 0 online &middot; ~200 hours &middot; 1 playthrough. No cheats while trophy hunting: cheats disable trophies and saving.</p>
+  </aside>
+</main>
+
+<footer class="foot">
+  <p>Leonida Trophy Ledger — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of their owners; this guide uses no Rockstar logo or official artwork. Progress is saved only in your browser (localStorage). Works offline. Trophy list as published 18 November 2026; guides cite their sources in the detail panel.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
