@@ -1,8 +1,8 @@
 # Leonida Trophy Ledger — GTA VI Trophy Guide & Tracker
 
-[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-gold)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![55 trophies](https://img.shields.io/badge/trophies-55-blue)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![$250 prize pool](https://img.shields.io/badge/prize-$250-green)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/agusher21/gta6-trophy-guide-01-v3/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/agusher21/gta6-trophy-guide-01-v3/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline web app that guides and tracks all **55 PlayStation 5 trophies** of Grand Theft Auto VI — built for the [make.fun bounty "Build the best GTA 6 trophy guide"](https://make.fun/bounty/gta6-trophy-guide-01) ($250 pool, top 50 paid).
 
